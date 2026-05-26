@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — Tonnage</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Barlow+Condensed:wght@300;600;800&family=Barlow:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0d0f0a;
+    --surface: #141710;
+    --border: #2a2e22;
+    --accent: #c8e84a;
+    --accent-dim: rgba(200,232,74,0.08);
+    --text: #e8ecde;
+    --muted: #7a8266;
+    --mono: 'DM Mono', monospace;
+    --display: 'Barlow Condensed', sans-serif;
+    --body: 'Barlow', sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--body);
+    font-size: 16px;
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  header {
+    border-bottom: 1px solid var(--border);
+    padding: 2.5rem 0 2rem;
+    background: var(--surface);
+  }
+
+  .wrap {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .logo-line {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .app-name {
+    font-family: var(--display);
+    font-weight: 800;
+    font-size: 2.4rem;
+    letter-spacing: -0.01em;
+    color: var(--accent);
+    line-height: 1;
+  }
+
+  .dot { color: var(--muted); }
+
+  .doc-label {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--accent-dim);
+    border: 1px solid var(--border);
+    padding: 0.2rem 0.6rem;
+    border-radius: 2px;
+  }
+
+  .header-meta {
+    font-family: var(--mono);
+    font-size: 0.75rem;
+    color: var(--muted);
+    margin-top: 0.4rem;
+  }
+
+  main { padding: 3rem 0 5rem; }
+
+  .intro {
+    font-size: 1.05rem;
+    color: var(--text);
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+    opacity: 0.85;
+  }
+
+  section { margin-bottom: 2.8rem; }
+
+  h2 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  h2::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 2px;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+
+  p { margin-bottom: 0.9rem; opacity: 0.88; }
+
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    list-style: none;
+    margin: 0.5rem 0 0.9rem;
+  }
+
+  ul li {
+    padding: 0.35rem 0 0.35rem 1.2rem;
+    position: relative;
+    opacity: 0.88;
+  }
+
+  ul li::before {
+    content: '›';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .tag {
+    display: inline-block;
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-dim);
+    border: 1px solid rgba(200,232,74,0.2);
+    padding: 0.15rem 0.5rem;
+    border-radius: 2px;
+    margin-right: 0.3rem;
+    vertical-align: middle;
+  }
+
+  .callout {
+    background: var(--accent-dim);
+    border-left: 3px solid var(--accent);
+    padding: 1rem 1.2rem;
+    border-radius: 0 4px 4px 0;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+    opacity: 0.95;
+  }
+
+  .contact-block {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 1.4rem 1.6rem;
+    margin-top: 1rem;
+  }
+
+  .contact-block a {
+    color: var(--accent);
+    text-decoration: none;
+    font-family: var(--mono);
+    font-size: 0.9rem;
+  }
+
+  .contact-block a:hover { text-decoration: underline; }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem 0;
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 0.04em;
+  }
+
+  footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  @media (max-width: 600px) {
+    .app-name { font-size: 1.9rem; }
+    h2 { font-size: 1.1rem; }
+    footer .wrap { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo-line">
+      <span class="app-name">Tonnage<span class="dot">.</span></span>
+      <span class="doc-label">Privacy Policy</span>
+    </div>
+    <div class="header-meta">Package: com.barathsurya.liftsync &nbsp;·&nbsp; Effective: May 26, 2025 &nbsp;·&nbsp; v1.0</div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <p class="intro">
+      This Privacy Policy explains how Tonnage ("the App", "we") collects, uses, and protects your information. We are committed to keeping your data minimal and your workouts yours.
+    </p>
+
+    <!-- 1 -->
+    <section>
+      <h2>Information We Collect</h2>
+      <p>We collect only what is necessary to provide the App's features.</p>
+
+      <p><span class="tag">Account</span> When you create an account, we collect your email address and a hashed password, managed via Firebase Authentication.</p>
+
+      <p><span class="tag">Profile</span> Information you optionally provide: name, age, weight, height, gender, and experience level. This is used solely to personalise training plans.</p>
+
+      <p><span class="tag">Workout Data</span> Workout logs, training plans, and progress records you create in the App.</p>
+
+      <p><span class="tag">Settings</span> Your in-app preferences (dark mode, accent colour, training goals).</p>
+
+      <div class="callout">
+        <strong>Guest Mode:</strong> If you use the App without an account, all data is stored locally on your device only. Nothing is transmitted to our servers.
+      </div>
+    </section>
+
+    <!-- 2 -->
+    <section>
+      <h2>How We Use Your Information</h2>
+      <ul>
+        <li>Authenticate and sync your data across devices</li>
+        <li>Generate personalised AI training plans (profile data is sent to Google Gemini via Firebase AI; it is not stored by us beyond your Firestore document)</li>
+        <li>Display your progress, volume metrics, and training adherence in the dashboard</li>
+        <li>Restore your data if you reinstall the App or switch devices</li>
+      </ul>
+      <p>We do <strong>not</strong> use your data for advertising, profiling, or sale to third parties.</p>
+    </section>
+
+    <!-- 3 -->
+    <section>
+      <h2>Third-Party Services</h2>
+      <p>The App uses the following third-party services, each governed by their own privacy policies:</p>
+      <ul>
+        <li><strong>Firebase Authentication</strong> — Manages sign-in credentials (Google LLC)</li>
+        <li><strong>Cloud Firestore</strong> — Stores your workout plans, logs, and profile (Google LLC)</li>
+        <li><strong>Firebase AI / Gemini Flash Lite</strong> — Generates AI training plans from your prompts and profile (Google LLC). AI features are only available to signed-in users.</li>
+      </ul>
+      <p>Google's privacy policy applies to data processed by these services: <a href="https://policies.google.com/privacy" style="color: var(--accent);">policies.google.com/privacy</a></p>
+    </section>
+
+    <!-- 4 -->
+    <section>
+      <h2>Data Storage &amp; Security</h2>
+      <ul>
+        <li>Signed-in user data is stored in Cloud Firestore, hosted by Google in their secure infrastructure</li>
+        <li>Local data (Room database, DataStore preferences) is stored on your device and protected by Android's app sandbox</li>
+        <li>Authentication tokens are managed by Firebase and never accessed directly by us</li>
+        <li>All network communication uses HTTPS/TLS encryption</li>
+        <li>Authentication state is excluded from Android cloud backup to prevent invalid tokens on new devices</li>
+      </ul>
+    </section>
+
+    <!-- 5 -->
+    <section>
+      <h2>Data Retention</h2>
+      <p>Your data is retained as long as your account is active. If you delete your account, we will delete your Firestore documents (profile, plans, logs) within 30 days. Local device data is removed when you uninstall the App.</p>
+    </section>
+
+    <!-- 6 -->
+    <section>
+      <h2>Children's Privacy</h2>
+      <p>The App is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, please contact us and we will delete it promptly.</p>
+    </section>
+
+    <!-- 7 -->
+    <section>
+      <h2>Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Access the personal data we hold about you</li>
+        <li>Correct inaccurate data from within the App's Settings and Profile screens</li>
+        <li>Delete your account and associated data by contacting us</li>
+        <li>Export your workout data (available via Settings)</li>
+        <li>Use the App in Guest Mode with no data leaving your device</li>
+      </ul>
+    </section>
+
+    <!-- 8 -->
+    <section>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Changes will be posted at this URL with an updated effective date. Continued use of the App after changes constitutes acceptance of the revised policy.</p>
+    </section>
+
+    <!-- 9 -->
+    <section>
+      <h2>Contact</h2>
+      <p>Questions, data requests, or account deletion:</p>
+      <div class="contact-block">
+        <strong>Developer:</strong> Barath Surya<br>
+        <strong>Package:</strong> com.barathsurya.liftsync<br>
+        <strong>Email:</strong> <a href="mailto:barathsurya@gmail.com">barathsurya@gmail.com</a>
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Tonnage · Privacy Policy · v1.0</span>
+    <span>Effective May 26, 2025</span>
+  </div>
+</footer>
+
+</body>
+</html>
